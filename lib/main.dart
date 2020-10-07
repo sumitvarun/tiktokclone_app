@@ -10,8 +10,15 @@ class TikTok extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'TikTok',
-      theme: ThemeData(primaryColor: Colors.brown[400]),
+      theme: ThemeData(
+        textTheme: Theme.of(context).textTheme.apply(
+          bodyColor: Colors.white,
+          displayColor: Colors.white
+        ),
+
+      ),
       home: Scaffold(
+        backgroundColor: Colors.black,
 
         body: Column(
           children: [
